@@ -2,7 +2,7 @@
  Small app that tracks RSI of a Stock and sends an email
 
 
-# Extended Guide: Monitor RSI and Create a Custom GPT for RSI Monitoring
+# EStep by Step Guide: Monitor RSI and Create a Custom GPT for RSI Monitoring
 
 This guide explains how to monitor the Relative Strength Index (RSI) for MicroStrategy Incorporated (MSTR), receive email alerts, and extend this functionality into a custom GPT using OpenAI’s GPT API.
 
@@ -240,7 +240,50 @@ To make your custom GPT accessible, use Flask to create a simple web interface.
 
 ---
 
+## **4.1 Automate GPT Monitoring Script**
+
+### Using macOS Automator
+
+1. Open the **Automator** app on your Mac (search for "Automator" in Spotlight).
+2. Click **File > New**, then select **Application**.
+3. In the search bar, type **Run Shell Script** and double-click it.
+4. In the script box, type:
+   ```bash
+   python3 /path/to/rsi_monitor_with_gpt.py
+   ```
+   Replace `/path/to/rsi_monitor_with_gpt.py` with the full path to your script file.
+5. Save the Automator application as `RSIMonitorGPT` on your desktop.
+6. Open the **Calendar** app.
+7. Create a new event at the time you want the script to run.
+8. In the event, set **Alert > Custom > Open File**, then select the `RSIMonitorGPT` application you created.
+9. Save the event, and your script will now run automatically at the scheduled time.
+
+### Using a Cron Job (macOS/Linux)
+
+1. Open your terminal.
+2. Edit your crontab file:
+   ```bash
+   crontab -e
+   ```
+3. Add a new line to schedule the script. For example, to run the script daily at 9 AM:
+   ```bash
+   0 9 * * * python3 /path/to/rsi_monitor_with_gpt.py
+   ```
+   Replace `/path/to/rsi_monitor_with_gpt.py` with the full path to your script.
+4. Save and exit the crontab editor.
+5. Confirm the job was added:
+   ```bash
+   crontab -l
+   ```
+
+Your script will now run daily at 9 AM.
+
+---
+
 ## **5. Automate GPT Responses**
+
+Schedule the GPT-enhanced RSI monitoring script using macOS Automator (see step 4.1 in the main guide).
+Alternatively, use a cron job or cloud scheduler to run the script periodically.
 
 - Schedule the GPT-enhanced RSI monitoring script using macOS Automator (see step 4.1 in the main guide).
 - Alternatively, use a cron job or cloud scheduler to run the script periodically.
@@ -258,7 +301,11 @@ To make your custom GPT accessible, use Flask to create a simple web interface.
 
 ---
 
-Congratulations! You’ve extended your RSI monitoring system into a custom GPT-powered assistant using OpenAI’s GPT API. Let me know if you need further assistance!
+Congratulations! You’ve extended your RSI monitoring system into a custom GPT-powered assistant using OpenAI’s GPT API. 
+
+
+
+
 
 
 
