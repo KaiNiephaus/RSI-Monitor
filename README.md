@@ -2,7 +2,7 @@
  Small app that tracks RSI of a Stock and sends an email
 
 
-# EStep by Step Guide: Monitor RSI and Create a Custom GPT for RSI Monitoring
+# Step by Step Guide: Monitor RSI and Create a Custom GPT for RSI Monitoring
 
 This guide explains how to monitor the Relative Strength Index (RSI) for MicroStrategy Incorporated (MSTR), receive email alerts, and extend this functionality into a custom GPT using OpenAI’s GPT API.
 
