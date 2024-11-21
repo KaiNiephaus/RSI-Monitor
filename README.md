@@ -5,6 +5,13 @@
 # Purpose
 Learning and utilizing simple Python operations
 
+# Next iteration
+Custom GPT Agent
+
+
+–––––––––
+
+
 
 # Step by Step Guide: Monitor RSI and Create a Custom GPT for RSI Monitoring
 
