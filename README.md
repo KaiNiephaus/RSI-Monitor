@@ -1,5 +1,9 @@
 # RSI Monitor
- Small app that tracks RSI of a Stock and sends an email
+ Small local app that tracks RSI of a Stock and sends an email when RSI reaches a defined treshold.
+ Bonus: Using Automator, the app can be triggered through custom calendar events.
+
+# Purpose
+Learning and utilizing simple Python operations
 
 
 # Step by Step Guide: Monitor RSI and Create a Custom GPT for RSI Monitoring
