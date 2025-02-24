@@ -2,11 +2,14 @@
  Small local app that tracks RSI of a Stock and sends an email when RSI reaches a defined treshold.
  Bonus: Using Automator, the app can be triggered through custom calendar events.
 
+![RSI Monitor](https://github.com/user-attachments/assets/b6de802a-bc6a-4ca4-916e-cd2b73c7518a)
+
+
 # Purpose
 Learning and utilizing simple Python operations
 
 # Next iteration
-Custom GPT Agent
+Custom GPT Automation
 
 
 –––––––––
